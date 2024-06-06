@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tw_application</title>
+</head>
+<body>
+    <header>
+        <h1>Tw_tter</h1>
+    </header>
+    <div class="button-container">
+        <%= link_to 'new post', new_post_path, class:"link_button" %>
+    </div>
+    <ul>
+        <% @posts.each do |post| %>
+            <li>
+                <h2><%= post.title %></h2>
+                <p><%= post.content %></p>
+                <span>
+                    <small><%= post.created_at %></small>
+                </span>
+                <div class="edit_delete_wrapper">
+                    <%= link_to 'edit', edit_post_path(post), class:"link_button" %>
+                    <%= button_to "delete", post_path(post), method: :delete, class:"link_another_button" %>
+                </div>
+            </li>
+        <% end %>
+    </ul>
+    <footer>
+    <small>
+        つぶやきマウス
+    </small>
+    </footer>
+</body>
+</html>

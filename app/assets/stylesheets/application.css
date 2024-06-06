@@ -1,0 +1,186 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    background-color: #e0f7fa;
+    /* 水色の背景色 */
+    color: #00796b;
+    /* 深緑のテキストカラー */
+    font-family: Arial, sans-serif;
+    margin: 10% 20% 10% 20%;
+    padding: 0;
+}
+
+footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+h1,
+h2 {
+    color: #004d40;
+    /* 濃い水色のテキストカラー */
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+a {
+    color: white;
+    /* 深緑のリンクカラー */
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.link_button {
+    background-color: #4dd0e1;
+    /* 明るい水色のボタン */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.link_button:hover {
+    background-color: #26c6da;
+    /* ホバー時の少し濃い水色 */
+}
+
+.link_another_button {
+    background-color: #e57373;
+    /* 赤みのあるボタン */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.link_another_button:hover {
+    background-color: #ef5350;
+    /* ホバー時の濃い赤 */
+}
+
+.button-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    /* 白い背景色 */
+    border: 1px solid #004d40;
+    /* 濃い水色の枠線 */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.edit_delete_wrapper {
+    margin-top: 10px;
+    display: flex;
+}
+
+/* 既存のスタイルに追加する */
+.form_container {
+    background-color: #ffffff;
+    /* 白い背景色 */
+    border: 1px solid #004d40;
+    /* 濃い水色の枠線 */
+    padding: 20px;
+
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form_input {
+    margin-bottom: 20px;
+}
+
+.form_input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #004d40;
+    /* 濃い水色のラベルカラー */
+}
+
+.form_input input[type="text"],
+.form_input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #004d40;
+    /* 濃い水色の枠線 */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form_input textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.button_send {
+    text-align: center;
+}
+
+/*エラー表示*/
+
+.error_messages {
+    background-color: #ffcccc;
+    /* 薄い赤色の背景色 */
+    border: 1px solid #ff0000;
+    /* 赤色の枠線 */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    width: 75%;
+}
+
+.error_messages h2 {
+    color: #ff0000;
+    /* 赤色のテキストカラー */
+}
+
+.error_messages ul {
+    list-style-type: none;
+    padding: 0;
+    color: #ff0000;
+    /* 赤色のテキストカラー */
+}
